@@ -1,11 +1,13 @@
 # GitHub Pages Health Check
 
-*Checks your GitHub Pages site for common DNS configuration issues*
+_Checks your GitHub Pages site for common DNS configuration issues_
 
 [![Build Status](https://github.com/github/pages-health-check/actions/workflows/push-cibuild.yml/badge.svg)](https://github.com/github/pages-health-check/actions/workflows/push-cibuild.yml)
 [![Gem Version](https://badge.fury.io/rb/github-pages-health-check.svg)](http://badge.fury.io/rb/github-pages-health-check)
 
 ## Installation
+
+<!-- READ ME FOR ASHON -->
 
 `gem install github-pages-health-check`
 
@@ -30,10 +32,9 @@
 raises GitHubPages::HealthCheck::Errors::InvalidCNAMEError
 ```
 
-
 ### Retrieving specific checks
 
-``` ruby
+```ruby
 > check.domain.should_be_a_record?
 => true
 > check.domain.a_record?
